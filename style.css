@@ -760,3 +760,52 @@ footer h2 {
     color: #38bdf8;
     font-size: 16px;
 }
+/* உங்கள் மற்ற CSS code */
+
+
+/* =========================================
+   CONTACT CARD
+========================================= */
+
+.contact-card {
+    width: 100%;
+    margin-top: 25px;
+}
+
+.contact-card label {
+    display: block;
+    margin: 18px 0 8px;
+}
+
+.contact-card input {
+    display: block;
+    width: 100%;
+    height: 52px;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 450px) {
+
+    .contact-card {
+        width: 100%;
+    }
+
+    .contact-card label {
+        font-size: 17px;
+    }
+
+    .contact-card input {
+        width: 100%;
+        height: 50px;
+        font-size: 16px;
+    }
+
+    #saveContactButton {
+        width: 100%;
+        height: 52px;
+    }
+}
