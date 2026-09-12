@@ -471,18 +471,20 @@ function showSOSOptions(
 ========================================= */
 
 function sendSMSMessage(
-    phoneNumber,
-    message
-) {
+    if (contact.phone) {
 
-    const smsURL =
-        "sms:" +
-        encodeURIComponent(phoneNumber) +
-        "?body=" +
-        encodeURIComponent(message);
+    const sendSMS =
+        confirm(
+            "🚨 Send SOS message through SMS?"
+        );
 
-    window.location.href =
-        smsURL;
+    if (sendSMS) {
+
+        sendSMSMessage(
+            contact.phone,
+            message
+        );
+    }
 }
 
 
@@ -534,23 +536,4 @@ document.addEventListener(
             "Emergency SOS System loaded successfully."
         );
 
-    }
-);
-function sendSMS() {
-    const phone = localStorage.getItem("emergencyPhone");
-
-    if (!phone) {
-        alert("Please save emergency contact number first.");
-        return;
-    }
-
-    const message =
-        "🚨 EMERGENCY SOS\n" +
-        "I need help immediately.\n" +
-        "My emergency location has been captured.";
-
-    const smsURL =
-        "sms:" + phone + "?body=" + encodeURIComponent(message);
-
-    window.location.href = smsURL;
-}
+    
