@@ -270,7 +270,19 @@ function sendSMSMessage(phoneNumber, message) {
 
     window.location.href = smsURL;
 }
+/* =========================================
+   EMERGENCY BUTTON
+========================================= */
 
+if (emergencyButton) {
+
+    emergencyButton.addEventListener(
+        "click",
+        function () {
+            sendSOS();
+        }
+    );
+}
 
 /* =========================================
    SEND SOS
