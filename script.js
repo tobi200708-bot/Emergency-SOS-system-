@@ -408,7 +408,14 @@ function showSOSOptions(
 
     let contactText =
         "No emergency contact saved.";
+function sendSMSMessage(phoneNumber, message) {
 
+    const smsURL =
+        "sms:" + phoneNumber +
+        "?body=" + encodeURIComponent(message);
+
+    window.location.href = smsURL;
+}
     if (
         contact.name &&
         contact.phone
@@ -470,7 +477,7 @@ function showSOSOptions(
    SEND SMS
 ========================================= */
 
-function sendSMSMessage(
+
     if (contact.phone) {
 
     const sendSMS =
