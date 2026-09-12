@@ -207,7 +207,7 @@ function createSOSMessage(
     latitude,
     longitude
 ) {
-
+function sendSOS() {
     const mapLink =
         createMapLink(
             latitude,
