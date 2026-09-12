@@ -1,0 +1,502 @@
+/* =========================================
+   EMERGENCY SOS SYSTEM - STYLE.CSS
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #070b14;
+    color: #ffffff;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+a {
+    color: inherit;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    width: 100%;
+    min-height: 76px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(7, 11, 20, 0.95);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    backdrop-filter: blur(12px);
+}
+
+.nav-container {
+    max-width: 1200px;
+    min-height: 76px;
+    margin: auto;
+    padding: 0 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 20px;
+    font-weight: 800;
+    flex-shrink: 0;
+}
+
+.logo span {
+    color: #38bdf8;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+nav a {
+    color: #dbeafe;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: calc(100vh - 76px);
+    max-width: 1200px;
+    margin: auto;
+    padding: 80px 25px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 60px;
+
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    background: rgba(6,182,212,0.12);
+    filter: blur(100px);
+    border-radius: 50%;
+    top: 50px;
+    left: 0;
+    z-index: -1;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.badge {
+    display: inline-block;
+    padding: 8px 15px;
+    margin-bottom: 20px;
+    color: #67e8f9;
+    background: rgba(8,145,178,0.15);
+    border: 1px solid rgba(56,189,248,0.25);
+    border-radius: 30px;
+}
+
+.hero h1 {
+    font-size: clamp(42px, 6vw, 72px);
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.hero p {
+    color: #cbd5e1;
+    font-size: 18px;
+    max-width: 600px;
+    margin-bottom: 25px;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+button,
+.hero button,
+.sos-button {
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.hero button,
+.sos-button,
+button[type="submit"] {
+    padding: 13px 22px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    background: linear-gradient(135deg, #38bdf8, #2563eb);
+    color: white;
+    transition: 0.3s;
+}
+
+.hero button:hover,
+.sos-button:hover,
+button[type="submit"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(37,99,235,0.3);
+}
+
+/* =========================
+   HERO RIGHT CARD
+========================= */
+
+.hero-visual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sos-card {
+    width: 100%;
+    max-width: 390px;
+    padding: 35px;
+    border-radius: 25px;
+
+    background: rgba(15,23,42,0.85);
+    border: 1px solid rgba(56,189,248,0.2);
+
+    box-shadow: 0 20px 60px rgba(0,0,0,0.35);
+}
+
+.sos-card h2 {
+    font-size: 30px;
+    margin: 15px 0;
+}
+
+.status {
+    color: #4ade80;
+    font-weight: 700;
+}
+
+/* =========================
+   SECTIONS
+========================= */
+
+section {
+    width: 100%;
+}
+
+.features,
+.how-it-works,
+.assistance,
+.contact {
+    max-width: 1200px;
+    margin: auto;
+    padding: 80px 25px;
+}
+
+section h2 {
+    font-size: clamp(32px, 5vw, 48px);
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+section > p {
+    color: #cbd5e1;
+}
+
+/* =========================
+   FEATURE CARDS
+========================= */
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.feature-card {
+    padding: 30px;
+    background: rgba(15,23,42,0.7);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 18px;
+    transition: 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(56,189,248,0.4);
+}
+
+.feature-card h3 {
+    margin: 12px 0;
+    font-size: 22px;
+}
+
+.feature-card p {
+    color: #cbd5e1;
+}
+
+/* =========================
+   PROCESS
+========================= */
+
+.steps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.step {
+    padding: 30px;
+    background: rgba(15,23,42,0.65);
+    border-radius: 18px;
+    border: 1px solid rgba(255,255,255,0.08);
+}
+
+.step-number {
+    color: #38bdf8;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.step h3 {
+    margin: 12px 0;
+}
+
+/* =========================
+   SOS ASSISTANCE
+========================= */
+
+.assistance {
+    text-align: center;
+}
+
+.assistance p {
+    margin-bottom: 25px;
+}
+
+/* =========================
+   CONTACT FORM
+========================= */
+
+.contact-form {
+    max-width: 600px;
+    margin: 35px auto 0;
+    padding: 30px;
+    background: rgba(15,23,42,0.7);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 18px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.contact-form input {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 20px;
+
+    background: #111827;
+    color: white;
+
+    border: 1px solid #334155;
+    border-radius: 8px;
+
+    font-size: 16px;
+}
+
+.contact-form input:focus {
+    outline: none;
+    border-color: #38bdf8;
+}
+
+.contact-form button {
+    width: 100%;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    padding: 40px 25px;
+    text-align: center;
+    background: #050811;
+    border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+footer h2 {
+    color: #38bdf8;
+    margin-bottom: 10px;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+    .hero {
+        grid-template-columns: 1fr;
+        gap: 50px;
+        text-align: center;
+    }
+
+    .hero-content {
+        max-width: 700px;
+        margin: auto;
+    }
+
+    .hero-visual {
+        margin: auto;
+    }
+
+    .feature-grid,
+    .steps {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .navbar {
+        min-height: auto;
+    }
+
+    .nav-container {
+        min-height: 70px;
+        padding: 12px 15px;
+        flex-direction: column;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .logo {
+        font-size: 19px;
+    }
+
+    nav {
+        width: 100%;
+        justify-content: center;
+        gap: 14px;
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    .hero {
+        min-height: auto;
+        padding: 55px 20px;
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: left;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .hero-visual {
+        width: 100%;
+    }
+
+    .sos-card {
+        max-width: 100%;
+        padding: 25px;
+    }
+
+    .features,
+    .how-it-works,
+    .assistance,
+    .contact {
+        padding: 55px 20px;
+    }
+
+    .feature-grid,
+    .steps {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .feature-card,
+    .step {
+        padding: 24px;
+    }
+
+    .contact-form {
+        padding: 22px;
+    }
+
+    section h2 {
+        font-size: 32px;
+    }
+}
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 400px) {
+
+    .logo {
+        font-size: 17px;
+    }
+
+    nav {
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
