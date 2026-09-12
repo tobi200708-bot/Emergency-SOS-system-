@@ -304,7 +304,11 @@ function sendSOS() {
                 latitude,
                 longitude
             );
-
+await saveSOSAlert(
+    latitude,
+    longitude,
+    message
+);
 
         /* -------------------------
            Show Alert
