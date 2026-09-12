@@ -536,3 +536,21 @@ document.addEventListener(
 
     }
 );
+function sendSMS() {
+    const phone = localStorage.getItem("emergencyPhone");
+
+    if (!phone) {
+        alert("Please save emergency contact number first.");
+        return;
+    }
+
+    const message =
+        "🚨 EMERGENCY SOS\n" +
+        "I need help immediately.\n" +
+        "My emergency location has been captured.";
+
+    const smsURL =
+        "sms:" + phone + "?body=" + encodeURIComponent(message);
+
+    window.location.href = smsURL;
+}
