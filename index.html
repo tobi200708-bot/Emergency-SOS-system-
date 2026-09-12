@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Emergency SOS System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+    <header class="header">
+        <div class="container nav">
+
+            <div class="logo">
+                🚨 <span>Emergency SOS</span>
+            </div>
+
+            <a href="#home" class="nav-link">Home</a>
+
+        </div>
+    </header>
+
+
+    <!-- =========================
+         MAIN
+    ========================== -->
+    <main id="home">
+
+        <!-- =========================
+             HERO SECTION
+        ========================== -->
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <p class="badge">
+                    🛡️ CLOUD BASED EMERGENCY SYSTEM
+                </p>
+
+                <h1>
+                    Emergency SOS
+                    <span>System</span>
+                </h1>
+
+                <p class="description">
+                    Quickly send an emergency alert with your
+                    current location to your emergency contact.
+                </p>
+
+
+                <!-- =========================
+                     SOS BUTTON
+                ========================== -->
+                <button
+                    id="sosButton"
+                    class="sos-button"
+                    type="button">
+
+                    🚨 SEND SOS
+
+                </button>
+
+
+                <!-- STATUS -->
+                <p
+                    id="statusMessage"
+                    class="status-message">
+
+                    Press the button only during an emergency.
+
+                </p>
+
+
+                <!-- =========================
+                     LOCATION
+                ========================== -->
+                <div class="location-box">
+
+                    <span>📍 Location Status</span>
+
+                    <strong id="locationStatus">
+                        Ready
+                    </strong>
+
+                </div>
+
+
+                <!-- =========================
+                     EMERGENCY BUTTON
+                ========================== -->
+                <button
+                    id="emergencyButton"
+                    class="emergency-button"
+                    type="button">
+
+                    🚨 EMERGENCY SOS
+
+                </button>
+
+
+                <!-- =========================
+                     EMERGENCY CONTACT
+                ========================== -->
+                <div class="contact-section">
+
+                    <h2>
+                        Emergency Contact
+                    </h2>
+
+                    <div class="input-group">
+
+                        <label for="contactName">
+                            Contact Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="contactName"
+                            placeholder="Enter contact name">
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label for="contactPhone">
+                            Contact Phone
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="contactPhone"
+                            placeholder="Enter phone number">
+
+                    </div>
+
+
+                    <button
+                        id="saveContactButton"
+                        class="save-button"
+                        type="button">
+
+                        💾 SAVE CONTACT
+
+                    </button>
+
+
+                    <p
+                        id="contactStatus"
+                        class="contact-status">
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- =========================
+                 RIGHT SIDE CARD
+            ========================== -->
+            <div class="hero-card">
+
+                <div class="sos-card">
+
+                    <div class="card-icon">
+                        🚨
+                    </div>
+
+                    <h2>
+                        Emergency Alert
+                    </h2>
+
+                    <p>
+                        Your emergency location can be
+                        shared quickly when you need help.
+                    </p>
+
+
+                    <div class="card-item">
+
+                        <span>📍 Current Location</span>
+
+                        <strong>
+                            GPS
+                        </strong>
+
+                    </div>
+
+
+                    <div class="card-item">
+
+                        <span>☁️ Cloud Storage</span>
+
+                        <strong>
+                            Firebase
+                        </strong>
+
+                    </div>
+
+
+                    <div class="card-item">
+
+                        <span>📱 Emergency Contact
