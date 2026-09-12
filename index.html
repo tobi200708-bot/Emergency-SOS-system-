@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Emergency SOS System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+    <header class="header">
+
+        <div class="container nav">
+
+            <div class="logo">
+                🚨 <span>Emergency SOS</span>
+            </div>
+
+            <a href="#home" class="nav-link">
+                Home
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================
+         MAIN
+    ========================== -->
+    <main id="home">
+
+
+        <!-- =========================
+             HERO SECTION
+        ========================== -->
+        <section class="hero">
+
+            <!-- LEFT SIDE -->
+            <div class="hero-content">
+
+                <p class="badge">
+                    🛡️ CLOUD BASED EMERGENCY SYSTEM
+                </p>
+
+
+                <h1>
+                    Emergency SOS
+                    <span>System</span>
+                </h1>
+
+
+                <p class="description">
+                    Quickly send an emergency alert with your
+                    current location to your emergency contact.
+                </p>
+
+
+                <!-- =========================
+                     MAIN SOS BUTTON
+                ========================== -->
+
+                <button
+                    id="sosButton"
+                    class="sos-button"
+                    type="button">
+
+                    🚨 SEND SOS
+
+                </button>
+
+
+                <!-- =========================
+                     STATUS MESSAGE
+                ========================== -->
+
+                <p
+                    id="statusMessage"
+                    class="status-message">
+
+                    Press the button only during an emergency.
+
+                </p>
+
+
+                <!-- =========================
+                     LOCATION STATUS
+                ========================== -->
+
+                <div class="location-box">
+
+                    <span>
+                        📍 Location Status
+                    </span>
+
+                    <strong id="locationStatus">
+                        Ready
+                    </strong>
+
+                </div>
+
+
+                <!-- =========================
+                     EMERGENCY SOS BUTTON
+                ========================== -->
+
+                <button
+                    id="emergencyButton"
+                    class="emergency-button"
+                    type="button">
+
+                    🚨 EMERGENCY SOS
+
+                </button>
+
+
+                <!-- =========================
+                     CONTACT SECTION
+                ========================== -->
+
+                <div
+                    class="contact-section"
+                    id="contact">
+
+                    <h2>
+                        Emergency Contact
+                    </h2>
+
+
+                    <!-- CONTACT NAME -->
+
+                    <div class="input-group">
+
+                        <label for="contactName">
+                            Contact Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="contactName"
+                            placeholder="Enter contact name"
+                            autocomplete="name">
+
+                    </div>
+
+
+                    <!-- CONTACT PHONE -->
+
+                    <div class="input-group">
+
+                        <label for="contactPhone">
+                            Contact Phone
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="contactPhone"
+                            placeholder="Enter phone number"
+                            autocomplete="tel">
+
+                    </div>
+
+
+                    <!-- SAVE CONTACT -->
+
+                    <button
+                        id="saveContactButton"
+                        class="save-button"
+                        type="button">
+
+                        💾 SAVE CONTACT
+
+                    </button>
+
+
+                    <!-- CONTACT STATUS -->
+
+                    <p
+                        id="contactStatus"
+                        class="contact-status">
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- =========================
+                 RIGHT SIDE
+            ========================== -->
+
+            <div class="hero-card">
+
+                <div class="sos-card">
+
+
+                    <!-- ICON -->
+
+                    <div class="card-icon">
+                        🚨
+                    </div>
+
+
+                    <h2>
+                        Emergency Alert
+                    </h2>
+
+
+                    <p>
+                        Your emergency location can be
+                        shared quickly when you need help.
+                    </p>
+
+
+                    <!-- LOCATION -->
+
+                    <div class="card-item">
+
+                        <span>
+                            📍 Current Location
+                        </span>
+
+                        <strong>
+                            GPS
+                        </strong>
+
+                    </div>
+
+
+                    <!-- FIREBASE -->
+
+                    <div class="card-item">
+
+                        <span>
+                            ☁️ Cloud Storage
+                        </span>
+
+                        <strong>
+                            Firebase
+                        </strong>
+
+                    </div>
+
+
+                    <!-- SMS -->
+
+                    <div class="card-item">
+
+                        <span>
+                            📱 Emergency Contact
+                        </span>
+
+                        <strong>
+                            SMS
+                        </strong>
+
+                    </div>
+
+
+                    <!-- SYSTEM -->
+
+                    <div class="card-item">
+
+                        <span>
+                            🔐 System
+                        </span>
+
+                        <strong>
+                            Active
+                        </strong>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             HOW IT WORKS
+        ========================== -->
+
+        <section class="features">
+
+            <div class="container">
+
+                <h2>
+                    How Emergency SOS Works
+                </h2>
+
+
+                <div class="feature-grid">
+
+
+                    <!-- STEP 1 -->
+
+                    <div class="feature-card">
+
+                        <div class="feature-icon">
+                            📍
+                        </div>
+
+                        <h3>
+                            1. Get Location
+                        </h3>
+
+                        <p>
+                            The system gets your current
+                            GPS location.
+                        </p>
+
+                    </div>
+
+
+                    <!-- STEP 2 -->
+
+                    <div class="feature-card">
+
+                        <div class="feature-icon">
+                            ☁️
+                        </div>
+
+                        <h3>
+                            2. Cloud Alert
+                        </h3>
+
+                        <p>
+                            Emergency information is stored
+                            in Firebase Firestore.
+                        </p>
+
+                    </div>
+
+
+                    <!-- STEP 3 -->
+
+                    <div class="feature-card">
+
+                        <div class="feature-icon">
+                            📱
+                        </div>
+
+                        <h3>
+                            3. Send SMS
+                        </h3>
+
+                        <p>
+                            The emergency message opens
+                            in your phone SMS application.
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             ABOUT SECTION
+        ========================== -->
+
+        <section class="about">
+
+            <div class="container">
+
+                <h2>
+                    About Emergency SOS
+                </h2>
+
+                <p>
+                    This cloud based Emergency SOS System
+                    helps users quickly prepare an emergency
+                    alert containing their current location.
+                </p>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="footer">
+
+        <p>
+            © 2026 Emergency SOS System
+        </p>
+
+    </footer>
+
+
+    <!-- =========================
+         JAVASCRIPT
+         IMPORTANT
+    ========================== -->
+
+    <script
+        type="module"
+        src="script.js">
+    </script>
+
+
+</body>
+
+</html>
