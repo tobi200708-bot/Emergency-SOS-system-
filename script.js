@@ -200,26 +200,75 @@ function createMapLink(
 
 
 /* =========================================
-   CREATE SOS MESSAGE
+   SHOW SOS OPTIONS
 ========================================= */
 
-function createSOSMessage(
-    latitude,
-    longitude
-) {
+function showSOSOptions(message, latitude, longitude) {
 
-    const mapLink =
-        createMapLink(
-            latitude,
-            longitude
+    const mapLink = createMapLink(latitude, longitude);
+    const contact = emergencyContact;
+
+    let contactText = "No emergency contact saved.";
+
+    if (contact.name && contact.phone) {
+        contactText =
+            "Contact: " +
+            contact.name +
+            "\nPhone: " +
+            contact.phone;
+    }
+
+    /* OPEN MAP */
+
+    const userConfirmed = confirm(
+        "🚨 EMERGENCY SOS\n\n" +
+        "Your location has been captured.\n\n" +
+        contactText +
+        "\n\n" +
+        "Open your emergency location?"
+    );
+
+    if (userConfirmed) {
+        window.open(mapLink, "_blank");
+    }
+
+    /* SEND SMS */
+
+    if (contact.phone) {
+
+        const sendSMS = confirm(
+            "🚨 Send SOS message through SMS?"
         );
 
-    return (
-        "EMERGENCY SOS ALERT!\n\n" +
-        "I need emergency assistance.\n" +
-        "My current location:\n" +
-        mapLink
-    );
+        if (sendSMS) {
+            sendSMSMessage(
+                contact.phone,
+                message
+            );
+        }
+
+    } else {
+
+        alert(
+            "Please save an emergency contact number first."
+        );
+    }
+}
+
+
+/* =========================================
+   SEND SMS
+========================================= */
+
+function sendSMSMessage(phoneNumber, message) {
+
+    const smsURL =
+        "sms:" +
+        phoneNumber +
+        "?body=" +
+        encodeURIComponent(message);
+
+    window.location.href = smsURL;
 }
 
 
