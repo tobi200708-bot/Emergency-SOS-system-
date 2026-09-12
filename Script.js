@@ -228,7 +228,6 @@ function sendSOS() {
    SEND SOS
 ========================================= */
 
-async function sendSOS() {
 
     /* -------------------------
        Change Button
