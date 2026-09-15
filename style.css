@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #070b14;
+    color: white;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background: #111827;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #b8c1d1;
+}
+
+main {
+    width: 90%;
+    max-width: 600px;
+    margin: 30px auto;
+}
+
+.card {
+    background: #111827;
+    border-radius: 20px;
+    padding: 30px;
+    margin-bottom: 25px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.card h2 {
+    margin-bottom: 20px;
+}
+
+#status {
+    margin-bottom: 20px;
+    color: #b8c1d1;
+}
+
+#sosButton {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: none;
+    background: #e50914;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 0 30px rgba(229,9,20,0.5);
+}
+
+#sosButton:hover {
+    transform: scale(1.05);
+}
+
+#locationStatus {
+    margin-top: 25px;
+    color: #b8c1d1;
+}
+
+.qr-section p {
+    color: #b8c1d1;
+    line-height: 1.5;
+}
+
+#qrcode {
+    background: white;
+    padding: 15px;
+    width: fit-content;
+    margin: 25px auto;
+    border-radius: 10px;
+}
+
+#generateQR {
+    padding: 14px 25px;
+    border: none;
+    border-radius: 10px;
+    background: #2563eb;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#generateQR:hover {
+    background: #1d4ed8;
+}
+
+.small {
+    margin-top: 15px;
+    font-size: 13px;
+}
