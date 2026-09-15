@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Automatic Emergency SOS</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+    <div class="logo">🚨 Emergency SOS</div>
+
+    <button id="startSensorBtn" class="start-btn">
+        Start Automatic Protection
+    </button>
+</header>
+
+
+<main>
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <p class="badge">AUTOMATIC EMERGENCY SYSTEM</p>
+
+            <h1>
+                Automatic Emergency
+                <span>Alert System</span>
+            </h1>
+
+            <p class="description">
+                The system monitors your device sensors and can
+                automatically create an emergency alert when a
+                dangerous motion/fall-like event is detected.
+            </p>
+
+            <div class="status-card">
+
+                <div class="status-row">
+                    <span>System Status</span>
+                    <strong id="systemStatus">NOT ACTIVE</strong>
+                </div>
+
+                <div class="status-row">
+                    <span>Sensor</span>
+                    <strong id="sensorStatus">OFF</strong>
+                </div>
+
+                <div class="status-row">
+                    <span>Location</span>
+                    <strong id="locationStatus">Waiting...</strong>
+                </div>
+
+            </div>
+
+            <button id="manualSOS" class="sos-button">
+                🚨 EMERGENCY SOS
+            </button>
+
+            <p id="message" class="message"></p>
+
+        </div>
+
+
+        <div class="sensor-card">
+
+            <h2>📱 Sensor Monitor</h2>
+
+            <div class="sensor-value">
+                <span>Acceleration</span>
+                <strong id="acceleration">0.00</strong>
+            </div>
+
+            <div class="sensor-value">
+                <span>X</span>
+                <strong id="xValue">0.00</strong>
+            </div>
+
+            <div class="sensor-value">
+                <span>Y</span>
+                <strong id="yValue">0.00</strong>
+            </div>
+
+            <div class="sensor-value">
+                <span>Z</span>
+                <strong id="zValue">0.00</strong>
+            </div>
+
+            <div id="alertBox" class="alert-box">
+                No emergency detected
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="info">
+
+        <h2>How Automatic Alert Works</h2>
+
+        <div class="steps">
+
+            <div class="step">
+                <span>1</span>
+                <h3>Activate</h3>
+                <p>Start automatic protection.</p>
+            </div>
+
+            <div class="step">
+                <span>2</span>
+                <h3>Monitor</h3>
+                <p>Device motion sensor is monitored.</p>
+            </div>
+
+            <div class="step">
+                <span>3</span>
+                <h3>Detect</h3>
+                <p>Sudden dangerous movement is detected.</p>
+            </div>
+
+            <div class="step">
+                <span>4</span>
+                <h3>Alert</h3>
+                <p>Emergency alert is stored in Firebase.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+    <p>Automatic Emergency SOS System</p>
+</footer>
+
+
+<script type="module" src="firebase.js"></script>
+<script type="module" src="script.js"></script>
+
+</body>
+</html>
