@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SOS Cloud | Emergency Response System</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+</head>
+
+<body>
+
+    <!-- =====================================================
+         NAVBAR
+    ====================================================== -->
+
+    <header class="navbar">
+
+        <div class="nav-container">
+
+            <a href="#home" class="logo">
+
+                <div class="logo-icon">
+                    <span>+</span>
+                </div>
+
+                <div class="logo-text">
+                    <strong>SOS</strong>
+                    <span>CLOUD</span>
+                </div>
+
+            </a>
+
+
+            <nav class="nav-menu" id="navMenu">
+
+                <a href="#home" class="nav-link active">
+                    Home
+                </a>
+
+                <a href="#problem-solution" class="nav-link">
+                    Problem & Solution
+                </a>
+
+                <a href="#how-it-works" class="nav-link">
+                    How It Works
+                </a>
+
+                <a href="#live-emergency" class="nav-link">
+                    Live Status
+                </a>
+
+                <a href="#features" class="nav-link">
+                    Features
+                </a>
+
+                <a href="#emergency-network" class="nav-link">
+                    Emergency Network
+                </a>
+
+                <a href="#emergency-access" class="nav-link">
+                    Emergency QR
+                </a>
+
+                <button
+                    class="mobile-sos-btn"
+                    id="mobileSOS"
+                    type="button">
+
+                    <span class="pulse-dot"></span>
+                    SOS
+
+                </button>
+
+            </nav>
+
+
+            <div class="nav-actions">
+
+                <button
+                    class="login-btn"
+                    id="loginBtn"
+                    type="button">
+
+                    Login
+
+                </button>
+
+
+                <button
+                    class="sos-btn"
+                    id="sosButton"
+                    type="button">
+
+                    <span class="sos-icon">+</span>
+
+                    <span>
+                        EMERGENCY SOS
+                    </span>
+
+                </button>
+
+
+                <button
+                    class="menu-toggle"
+                    id="menuToggle"
+                    type="button"
+                    aria-label="Open menu">
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- =====================================================
+         MAIN CONTENT
+    ====================================================== -->
+
+    <main>
+
+
+        <!-- =================================================
+             HERO SECTION
+        ================================================== -->
+
+        <section
+            class="hero"
+            id="home">
+
+            <div class="hero-grid"></div>
+
+            <div class="hero-glow hero-glow-1"></div>
+            <div class="hero-glow hero-glow-2"></div>
+
+
+            <div class="hero-container">
+
+
+                <!-- LEFT -->
+
+                <div class="hero-content">
+
+                    <div class="hero-status">
+
+                        <span class="status-pulse"></span>
+
+                        <span>
+                            EMERGENCY SYSTEM ONLINE
+                        </span>
+
+                    </div>
+
+
+                    <h1 class="hero-title">
+
+                        Help, When
+                        <span>Every Second</span>
+                        Matters.
+
+                    </h1>
+
+
+                    <p class="hero-description">
+
+                        A cloud-powered Emergency SOS system
+                        that instantly connects you with trusted
+                        contacts and emergency responders when
+                        you need help most.
+
+                    </p>
+
+
+                    <div class="hero-buttons">
+
+                        <button
+                            class="hero-sos-button"
+                            id="heroSOSButton"
+                            type="button">
+
+                            <span class="hero-sos-icon">
+                                +
+                            </span>
+
+                            <span>
+                                ACTIVATE SOS
+                            </span>
+
+                            <span class="button-arrow">
+                                →
+                            </span>
+
+                        </button>
+
+
+                        <a
+                            href="#how-it-works"
+                            class="hero-outline-button">
+
+                            <span class="play-icon">
+                                ▶
+                            </span>
+
+                            See How It Works
+
+                        </a>
+
+                    </div>
+
+
+                    <div class="hero-trust">
+
+                        <div class="trust-avatars">
+
+                            <span>✓</span>
+                            <span>✓</span>
+                            <span>✓</span>
+
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Fast. Connected. Reliable.
+                            </strong>
+
+                            <small>
+                                Built for critical moments
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- RIGHT -->
+
+                <div class="hero-visual">
+
+                    <div class="radar-ring radar-ring-1"></div>
+                    <div class="radar-ring radar-ring-2"></div>
+                    <div class="radar-ring radar-ring-3"></div>
+
+
+                    <div class="connection connection-1"></div>
+                    <div class="connection connection-2"></div>
+                    <div class="connection connection-3"></div>
+
+
+                    <div class="network-node node-contact">
+
+                        <div class="node-icon">
+                            👤
+                        </div>
+
+                        <span>
+                            Trusted Contact
+                        </span>
+
+                    </div>
+
+
+                    <div class="network-node node-cloud">
+
+                        <div class="node-icon">
+                            ☁
+                        </div>
+
+                        <span>
+                            Cloud System
+                        </span>
+
+                    </div>
+
+
+                    <div class="network-node node-response">
+
+                        <div class="node-icon">
+                            🚑
+                        </div>
+
+                        <span>
+                            Response Team
+                        </span>
+
+                    </div>
+
+
+                    <div class="sos-core">
+
+                        <div class="sos-pulse"></div>
+
+                        <button
+                            class="big-sos-button"
+                            id="bigSOSButton"
+                            type="button">
+
+                            <span class="big-sos-plus">
+                                +
+                            </span>
+
+                            <strong>
+                                SOS
+                            </strong>
+
+                            <small>
+                                PRESS FOR HELP
+                            </small>
+
+                        </button>
+
+                    </div>
+
+
+                    <div class="live-card">
+
+                        <div class="live-card-header">
+
+                            <span class="live-indicator"></span>
+
+                            <span>
+                                LIVE EMERGENCY NETWORK
+                            </span>
+
+                        </div>
+
+
+                        <div class="live-card-body">
+
+                            <div class="live-stat">
+
+                                <strong id="responseTime">
+                                    &lt; 5s
+                                </strong>
+
+                                <span>
+                                    Alert Time
+                                </span>
+
+                            </div>
+
+
+                            <div class="live-stat">
+
+                                <strong>
+                                    24/7
+                                </strong>
+
+                                <span>
+                                    Monitoring
+                                </span>
+
+                            </div>
+
+
+                            <div class="live-stat">
+
+                                <strong>
+                                    GPS
+                                </strong>
+
+                                <span>
+                                    Location
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- HERO STATS -->
+
+            <div class="hero-stats">
+
+                <div class="hero-stat">
+
+                    <div class="hero-stat-icon">
+                        ⚡
+                    </div>
+
+                    <div>
+                        <strong>
+                            Instant Alerts
+                        </strong>
+
+                        <span>
+                            Cloud notification system
+                        </span>
+                    </div>
+
+                </div>
+
+
+                <div class="hero-stat">
+
+                    <div class="hero-stat-icon">
+                        📍
+                    </div>
+
+                    <div>
+                        <strong>
+                            Live Location
+                        </strong>
+
+                        <span>
+                            GPS-powered tracking
+                        </span>
+                    </div>
+
+                </div>
+
+
+                <div class="hero-stat">
+
+                    <div class="hero-stat-icon">
+                        🔔
+                    </div>
+
+                    <div>
+                        <strong>
+                            Smart Notifications
+                        </strong>
+
+                        <span>
+                            Notify trusted contacts
+                        </span>
+                    </div>
+
+                </div>
+
+
+                <div class="hero-stat">
+
+                    <div class="hero-stat-icon">
+                        ☁
+                    </div>
+
+                    <div>
+                        <strong>
+                            Cloud Powered
+                        </strong>
+
+                        <span>
+                            Accessible anywhere
+                        </span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             PROBLEM / SOLUTION
+        ================================================== -->
+
+        <section
+            class="problem-solution"
+            id="problem-solution">
+
+            <div class="ps-grid"></div>
+
+            <div class="ps-glow ps-glow-left"></div>
+            <div class="ps-glow ps-glow-right"></div>
+
+
+            <div class="ps-container">
+
+
+                <div class="ps-header">
+
+                    <span class="section-label">
+                        THE PROBLEM
+                    </span>
+
+                    <h2>
+                        In an emergency,
+                        <span>
+                            every second matters.
+                        </span>
+                    </h2>
+
+                    <p>
+                        Traditional emergency communication can
+                        be slow, disconnected, and difficult to
+                        coordinate. Our cloud-based SOS system
+                        turns those critical seconds into immediate
+                        action.
+                    </p>
+
+                </div>
+
+
+                <div class="ps-comparison">
+
+
+                    <!-- PROBLEM -->
+
+                    <div class="problem-panel">
+
+                        <div class="panel-top">
+
+                            <div class="panel-icon problem-icon">
+                                !
+                            </div>
+
+                            <div>
+
+                                <span class="panel-label">
+                                    WITHOUT SOS CLOUD
+                                </span>
+
+                                <h3>
+                                    Emergency Response Gaps
+                                </h3>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="problem-list">
+
+                            <div class="problem-item">
+
+                                <div class="problem-item-icon">
+                                    ⏱
+                                </div>
+
+                                <div>
+
+                                    <strong>
+                                        Precious Time Lost
+                                    </strong>
+
+                                   
